@@ -64,13 +64,9 @@ class PageController extends Controller
     {
         return view('pages.project-detailed');
     }
-    public function project1()
+    public function project()
     {
-        return view('pages.projects-1');
-    }
-    public function project2()
-    {
-        return view('pages.projects-2');
+        return view('pages.projects');
     }
 
     /** show the social media marketing page**/

@@ -26,4 +26,35 @@ class ProjectController extends Controller
 
         return view('pages.projectDetails.itec');
     }
+
+    // get the bright college details page
+    public function brightCollegeDetails()
+    {
+
+        return view('pages.projectDetails.brightCollege');
+    }
+    // get the zaker dairy details page
+    public function zakerDairyDetails()
+    {
+
+        return view('pages.projectDetails.zakerDairy');
+    }
+    // get the noble training academy details page
+    public function ntaDetails()
+    {
+
+        return view('pages.projectDetails.nta');
+    }
+    // get the crush station details page
+    public function crushStationDetails()
+    {
+
+        return view('pages.projectDetails.crushStation');
+    }
+    // get the cleanovative details page
+    public function cleanovativeDetails()
+    {
+
+        return view('pages.projectDetails.cleanovative');
+    }
 }

@@ -43,11 +43,9 @@ Route::get('/blog-detailed', [PageController::class, 'blogDetailed']);
 Route::get('/blog-list', [PageController::class, 'bloglist']);
 Route::get('/blog-detailed', [PageController::class, 'blogDetailed']);
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
-Route::get('/project-detailed', [PageController::class, 'projectDetailed'])->name('project.detailed');
 Route::get('/career', [PageController::class, 'career'])->name('career');
 Route::get('/case-study', [PageController::class, 'caseStudy'])->name('case.study');
-Route::get('/projects', [PageController::class, 'project1']);
-Route::get('/projects-2', [PageController::class, 'project2']);
+Route::get('/projects', [PageController::class, 'project']);
 Route::get('/service-detailed', [PageController::class, 'serviceDetailed']);
 Route::get('/social-media-marketing', [PageController::class, 'socialMediaMarketing']);
 Route::get('/search-engine-optimization', [PageController::class, 'searchEngineOptimization']);
@@ -65,8 +63,13 @@ Route::post('/store/contact/info', [ContactController::class, 'store'])->name('s
 
 //project details route
 Route::get('/atr', [ProjectController::class, 'atrDetails'])->name('atr.details');
-Route::get('uct', [ProjectController::class, 'uctDetails'])->name('uct.details');
-Route::get('itec', [ProjectController::class, 'itecDetails'])->name('itec.details');
+Route::get('/uct', [ProjectController::class, 'uctDetails'])->name('uct.details');
+Route::get('/itec', [ProjectController::class, 'itecDetails'])->name('itec.details');
+Route::get('/bright-college', [ProjectController::class, 'brightCollegeDetails'])->name('bright.college');
+Route::get('/zaker-dairy', [ProjectController::class, 'zakerDairyDetails'])->name('zaker.dairy');
+Route::get('/nta', [ProjectController::class, 'ntaDetails'])->name('nta');
+Route::get('/crush-station', [ProjectController::class, 'crushStationDetails'])->name('crush.station');
+Route::get('/cleanovative', [ProjectController::class, 'cleanovativeDetails'])->name('cleanovative');
 
 Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () {
 

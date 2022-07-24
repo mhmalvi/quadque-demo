@@ -6,7 +6,7 @@
                   <div class="row">
                       <div class="col-lg-6">
                           <div class="footer--logo">
-                              <a href="{{ route('home') }}"  alt="footer logo">
+                              <a href="{{ route('home') }}" target="_blank" alt="footer logo">
                                   <img src="{{ asset('assets/images/quadque_digital_final_logo_v1.0_1_300x80.png') }}" alt="footer">
                               </a>
                           </div>
@@ -34,8 +34,9 @@
                               </a>
                           </div>
                           <div class="detail-single footer-address">
-                              <h6>AUSTRALIA ADDRESS</h6>
-                              <h4>7 Greenfield Pde <br> BANKSTOWN NSW 2200,<br> Australia.</h4>
+                              <h6>BANGLADESH ADDRESS</h6>
+                              <h4>Level -7, 8/C, F.R Tower,<br> Sukrabad, PanthaPath 1207 Dhaka,<br> Dhaka Division, Bangladesh</h4>
+
 
                           </div>
 
@@ -51,7 +52,7 @@
 
                               <br><br>
                           </div>
-                          @if(!(url()->current() == 'http://demo1.quadque.digital/contact'))
+                          @if(!(\Route::currentRouteName() == 'contact'))
                           <div class="detail-single">
                               <div class="navigation-menu-social">
                                   <h6>FOLLOW</h6>
@@ -81,10 +82,10 @@
                           </div>
                           @endif
 
-                          @if(url()->current() == 'http://demo1.quadque.digital/contact')
+                          @if(\Route::currentRouteName() == 'contact')
                           <div class="detail-single footer-address">
-                              <h6>BANGLADESH ADDRESS</h6>
-                              <h4>Level -7, 8/C, F.R Tower,<br> Sukrabad, PanthaPath 1207 Dhaka,<br> Dhaka Division, Bangladesh</h4>
+                              <h6>AUSTRALIA ADDRESS</h6>
+                              <h4>7 Greenfield Pde <br> BANKSTOWN NSW 2200,<br> Australia.</h4>
                           </div>
                           @endif
 
@@ -117,7 +118,7 @@
                               </div>
 
                           </div>
-                          @if((url()->current() == 'http://demo1.quadque.digital/contact'))
+                          @if(\Route::currentRouteName() == 'contact')
                           <div class="detail-single">
                               <div class="navigation-menu-social">
                                   <h6>FOLLOW</h6>

@@ -125,7 +125,7 @@
                 </a>
                 <!-- projects single - end -->
                 <!-- projects single - start -->
-                <a href="{{ route('project.detailed') }}" class="project-list-single--wrapper">
+                <a href="{{ route('bright.college') }}" target="_blank" class="project-list-single--wrapper">
 
                     <div class="project-list-single">
                         <div class="project-list-single--content">
@@ -159,7 +159,7 @@
                 </a>
                 <!-- projects single - end -->
                 <!-- projects single - start -->
-                <a href="{{ route('project.detailed') }}" class="project-list-single--wrapper">
+                <a href="{{ route('zaker.dairy') }}" target="_blank" class="project-list-single--wrapper">
 
                     <div class="project-list-single">
                         <div class="project-list-single--content">
@@ -191,7 +191,8 @@
                 <!-- projects single - end -->
 
                 <!-- projects single - start -->
-                <a href="{{ route('project.detailed') }}" class="project-list-single--wrapper">
+                <a href="{{ route('nta') }}" target="_blank" class="project-list-single--wrapper">
+
 
                     <div class="project-list-single">
                         <div class="project-list-single--content">
@@ -222,7 +223,7 @@
                 <!-- projects single - end -->
 
                 <!-- projects single - start -->
-                <a href="{{ route('project.detailed') }}" class="project-list-single--wrapper">
+                <a href="{{ route('crush.station') }}" target="_blank" class="project-list-single--wrapper">
 
                     <div class="project-list-single">
                         <div class="project-list-single--content">
@@ -254,7 +255,7 @@
                 <!-- projects single - end -->
 
                 <!-- projects single - start -->
-                <a href="{{ route('project.detailed') }}" class="project-list-single--wrapper">
+                <a href="{{ route('cleanovative') }}" target="_blank" class="project-list-single--wrapper">
 
                     <div class="project-list-single">
                         <div class="project-list-single--content">

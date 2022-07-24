@@ -207,7 +207,9 @@
             </div>
         </div>
         <div class="single-image ">
-            <img src="assets/images/blog_content_img.jpg" alt="generic-image">
+            <img src="{{ asset('assets/images/group-pic-quadque.jpeg') }}" alt="generic-image">
+
+
         </div>
     </div>
     <!-- text content section - end -->

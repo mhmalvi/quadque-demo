@@ -32,7 +32,8 @@
         </div>
         <div class="page-header-bottom">
             <div class="single-image">
-                <img src="{{asset('assets/images/quadque_office.jpeg')}}" alt="contact-header">
+                <img src="{{asset('assets/images/group-pic-quadque.jpeg')}}" alt="contact-header">
+
               </div>
         </div>
         <div class="artwork artwork-3">

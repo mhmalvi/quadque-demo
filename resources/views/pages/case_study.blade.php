@@ -117,19 +117,7 @@
             </div>
 
         </div>
-        <div class="col-md-4 mt-3">
-           <div class="card">
-            <a href="">
-
-               <img class="card-img-top" src="{{ asset('assets/images/recent_works/BRIGHT-COLLEGE-AUSTRALIA.jpg') }}" alt="Card image cap">
-               <div class="card-body">
-                   <p class="title">Web</p>
-                   <p class="card-text">BRIGHT COLLEGE AUSTRALIA</p>
-               </div>
-            </a>
-           </div>
-
-        </div>
+        
 
         <div class="col-md-4 mt-3">
            
