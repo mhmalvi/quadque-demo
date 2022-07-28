@@ -16,6 +16,17 @@
         nav > div.flex{
             display:none;
         }
+        .blog-list-single--thumbnail img{
+
+                border: 2px solid #7037FF;
+                border-radius: 10px;
+        }
+        .blog-list-single--thumbnail:hover{
+
+               
+                border-radius: 10px;
+        }
+
 </style>
 @endpush
 
@@ -51,9 +62,8 @@
                                         <div class="blog-list-single">
                                             <!-- thumbnail - start -->
                                             <div class="blog-list-single--thumbnail">
-                                                <a href="{{ url('/blog-detailed') }}">
+                                                <a href="{{ route('blog.show',$blog->id) }}">
                                                     <img src="{{ asset('assets/images/blog_images/'.$blog->photo) }}" alt="blog-1">
-
                                                     <div class="hover">
                                                         <div class="circle">
                                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.75 43.564">

@@ -83,6 +83,10 @@
          width:500px;
          height:500px;
     }
+        .dark-1{
+        color:#fff !important;
+        }
+
        
     </style>
     

@@ -23,6 +23,23 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
+                      @if(Session::has('success'))
+                      <div class="alert alert-success alert-dismissible py-4">
+                          <button type="button" class="close" data-dismiss="alert">&times;</button>
+                          <strong style="font-size:14px">{{Session::get('success')}}</strong>
+                      </div>
+                      @endif
+                      @if($errors->any())
+                      <div class="alert alert-success alert-dismissible py-4">
+                          <button type="button" class="close" data-dismiss="alert">&times;</button>
+                          <ul>
+                              @foreach($errors->all() as $error)
+                              <li>{{$error}}</li>
+                              @endforeach
+                          </ul>
+                      </div>
+                      @endif
+
                         <h1 class="heading heading-very-large dark-1">
                             Let's get your free strategy session.
                         </h1>

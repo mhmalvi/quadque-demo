@@ -13,37 +13,34 @@
     <div class="container">
         <div class="card">
             <div class="inner-box" id="card">
-            @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                    <p style="color:yellow;text-align:center;font-size:12px;">{{ $error }}</p>
-
-                    @endforeach
-                </ul>
-            </div>
-            @endif
-
-         @if (session('success'))
-         <p style="color:green;text-align:center;font-size:12px;">
-
-             {{ session('success') }}
-         </p>
-         @endif
-
-         @if (session('fail'))
-         <div style="color:yellow;text-align:center;font-size:12px;">
-
-             {{ session('fail') }}
-         </div>
-         @endif
-
-
-
 
                 <div class="card-front">
                     <h2>LOGIN</h2>
-                    
+                      @if ($errors->any())
+                      <div class="alert alert-danger">
+                          <ul>
+                              @foreach ($errors->all() as $error)
+                              <p style="color:yellow;text-align:center;font-size:12px;">{{ $error }}</p>
+
+                              @endforeach
+                          </ul>
+                      </div>
+                      @endif
+
+                      @if (session('success'))
+                      <p style="color:green;text-align:center;font-size:12px;">
+
+                          {{ session('success') }}
+                      </p>
+                      @endif
+
+                      @if (session('fail'))
+                      <div style="color:yellow;text-align:center;font-size:12px;">
+
+                          {{ session('fail') }}
+                      </div>
+                      @endif
+
                       <form action="{{ route('login.check') }}" method="POST" id="loginForm">
                           @csrf
 
@@ -58,8 +55,32 @@
                 </div>
 
                 <div class="card-back">
-
                     <h2>REGISTER</h2>
+                      @if ($errors->any())
+                      <div class="alert alert-danger">
+                          <ul>
+                              @foreach ($errors->all() as $error)
+                              <p style="color:yellow;text-align:center;font-size:12px;">{{ $error }}</p>
+
+                              @endforeach
+                          </ul>
+                      </div>
+                      @endif
+
+                      @if (session('success'))
+                      <p style="color:green;text-align:center;font-size:12px;">
+
+                          {{ session('success') }}
+                      </p>
+                      @endif
+
+                      @if (session('fail'))
+                      <div style="color:yellow;text-align:center;font-size:12px;">
+
+                          {{ session('fail') }}
+                      </div>
+                      @endif
+
                          <form action="{{ route('signup') }}" method="POST" id="signupForm">
 
                              @csrf

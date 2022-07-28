@@ -23,9 +23,11 @@ class PageController extends Controller
     {
         return view('pages.about');
     }
-    public function blogDetailed()
+    public function blogDetailed($id)
     {
-        return view('pages.blog-detailed');
+
+        $blog = Blog::find($id);
+        return view('pages.blog-detailed', compact('blog'));
     }
     public function blogGrid()
     {

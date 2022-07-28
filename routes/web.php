@@ -39,9 +39,8 @@ Route::get('/login', [PageController::class, 'login'])->name('login');
 Route::post('/login/check', [AuthController::class, 'loginCheck'])->name('login.check');
 Route::post('/signup', [AuthController::class, 'signup'])->name('signup');
 Route::get('/about', [PageController::class, 'about'])->name('about');
-Route::get('/blog-detailed', [PageController::class, 'blogDetailed']);
 Route::get('/blog-list', [PageController::class, 'bloglist']);
-Route::get('/blog-detailed', [PageController::class, 'blogDetailed']);
+Route::get('/blog/show/{id}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/career', [PageController::class, 'career'])->name('career');
 Route::get('/case-study', [PageController::class, 'caseStudy'])->name('case.study');
@@ -57,7 +56,6 @@ Route::get('/design-photography', [PageController::class, 'designPhotography'])-
 Route::get('/video-animations', [PageController::class, 'videoAnimations'])->name('video.animations');
 Route::get('/event-managemant', [PageController::class, 'eventManagemant'])->name('event.managemant');
 Route::get('/404', [PageController::class, 'pages404']);
-Route::get('/blog/show/{id}', [BlogController::class, 'show'])->name('blog.show');
 Route::post('/store/subscription', [SubscriptionController::class, 'store'])->name('store.subscription');
 Route::post('/store/contact/info', [ContactController::class, 'store'])->name('store.contact.info');
 

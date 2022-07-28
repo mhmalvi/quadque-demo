@@ -7,6 +7,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
+                  @if(Session::has('success'))
+                  <div class="alert alert-success alert-dismissible py-3">
+                      <button type="button" class="close" data-dismiss="alert">&times;</button>
+                      <strong style="font-size:14px">{{Session::get('success')}}</strong>
+                  </div>
+                  @endif
+
                     <h1 class="heading heading-very-large dark-1">
                         Your ideas realized for the real world.
                     </h1>

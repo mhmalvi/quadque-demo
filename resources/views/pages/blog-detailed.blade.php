@@ -6,6 +6,12 @@
                max-height: 70px !important;
                 overflow: hidden !important;
        }
+        .blog-thumbnail img{
+
+        border: 2px solid #7037FF;
+        border-radius: 5px;
+        }
+
    </style>
 @endpush
 @section('content')

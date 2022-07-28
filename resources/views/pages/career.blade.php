@@ -127,6 +127,31 @@
             </div>
             <!-- Career galaery  end -->
 
+<!-- cta - start -->
+<div class="cta">
+    <div class="cta-wrapper position-relative bg-main">
+        <div class="container">
+            <div class="row align-items-lg-center">
+                <div class="col-md-6">
+                    <h3 class="heading heading-large dark-1">
+                        Have an idea?<br>Let’s get it done right!
+                    </h3>
+                </div>
+                <div class="col-md-6 d-md-inline-flex justify-content-md-end">
+                    <div class="button-wrapper">
+                        <a class="button button-2" href="contact.html">
+                            Let's Work Together
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="artwork artwork-4">
+            <img src="{{asset('assets/images/art_1.svg')}}" alt="artwork">
+        </div>
+    </div>
+</div>
+<!-- cta - end -->
 
 
 @endsection
