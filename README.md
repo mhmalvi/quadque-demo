@@ -1,6 +1,8 @@
 <!-- repo-card -->
 ![quadque-demo](docs/assets/social-card.png)
 
+![quadque-demo — architecture](docs/assets/architecture.png)
+
 # Quadque Demo
 
 The demo and showcase site for **Quadque Technologies**. This Laravel 8 application provides a live demonstration environment where prospective clients can explore platform capabilities, sample features, and interactive previews of the Quadque service offerings.
